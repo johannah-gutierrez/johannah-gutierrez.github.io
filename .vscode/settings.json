@@ -1,0 +1,8 @@
+{
+    "conventionalCommits.scopes": [
+        "package",
+        "vscode",
+        "component",
+        "asset"
+    ]
+}
