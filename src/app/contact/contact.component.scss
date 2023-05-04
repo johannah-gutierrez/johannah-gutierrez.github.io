@@ -69,11 +69,13 @@ article {
 }
 
 .contact-form {
+  z-index: -1;
   background-color: #f2f2f2d6;
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
-  width: 600px; /* increase width */
-  height: 500px; /* increase height */
+  width: 100%; /* set the width to 100% to fit within the container */
+  height: auto; /* set the height to auto to adjust to the content */
+  max-width: 600px; /* set a max-width to ensure that the form does not become too wide on larger screens */
 }
 
 .contact-form label {
@@ -83,7 +85,6 @@ article {
 .contact-form .heading {
   font-size: 24px;
   color: black;
-  ;
   margin-bottom: 12px;
   font-weight: bold;
   display: block;
@@ -92,10 +93,12 @@ article {
 .contact-form form {
   display: flex;
   flex-direction: column;
+  width: 100%; /* set the width to 100% to fit within the form container */
 }
 
-.contact-form label {
-  margin-bottom: 10px;
+textarea {
+  resize: none;
+  height: 150px; /* increase the height of the textarea to allow for longer messages */
 }
 
 textarea {
@@ -104,13 +107,15 @@ textarea {
   width: 100%; /* expand to full width */
 }
 
+
 .contact-form input,
 .contact-form textarea {
-  padding: 10px; /* increase padding */
+  padding: 10px;
   border: none;
   border-radius: 5px;
-  margin-bottom: 20px; /* increase margin */
-  width: 100%; /* expand to full width */
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px; /* adjust the font size to make it more readable on mobile */
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
@@ -126,8 +131,9 @@ textarea {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 16px; /* adjust the font size to make it more readable on mobile */
   cursor: pointer;
+  width: 100%; /* set the width to 100% to fit within the form container */
 }
 
 .contact-form button[type="submit"]:hover {
@@ -138,7 +144,35 @@ textarea {
 .formcontainer {
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  width: 800px; /* increase width */
+  width: 90%; /* set the width of the form container to 90% to allow for some padding */
+  max-width: 800px; /* set a max-width to ensure that the form container does not become too wide on larger screens */
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-title {
+    font-size: 8vh;
+  }
+
+  .hero header{
+    visibility: hidden;
+  }
+
+  .formcontainer {
+    width: 60%;
+    height: 65%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+  }
+  .contact-form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .contact-form button[type="submit"] {
+    max-width: 100%; /* Add this rule */
+    box-sizing: border-box; /* Add this rule */
+  }
+
 }
