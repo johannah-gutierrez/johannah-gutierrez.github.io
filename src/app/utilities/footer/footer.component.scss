@@ -194,3 +194,50 @@ hr{
 .copyright p{
   padding: 20px;
 }
+
+@media (max-width: 960px) {
+  .footer-sec {
+    height: auto;
+    top: unset;
+    border-top-left-radius: 0;
+  }
+}
+
+@media (max-width: 660px) {
+
+  .main {
+    margin: 20px 10px;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .row {
+    margin-top: 20px;
+  }
+
+  .footer-header {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .office-des {
+    gap: 10px;
+  }
+
+  .link-des {
+    gap: 5px;
+  }
+
+  .btn-know {
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 100%;
+  }
+}
