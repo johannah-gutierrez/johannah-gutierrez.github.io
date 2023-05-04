@@ -55,7 +55,7 @@ To stage and commit changes, here is what you will have to do.
 
 ![image](https://user-images.githubusercontent.com/111161441/236211478-1146cf0e-717f-44a5-b75d-1ff796efd145.png)
 
-## 5. Push you
+## 5. Push what
 
 ## 5. Deploy the Project to GitHub Pages
 
