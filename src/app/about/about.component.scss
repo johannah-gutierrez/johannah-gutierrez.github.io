@@ -91,6 +91,7 @@ article {
 }
 
 .carousel-item img {
+  object-fit: cover;
   display: block;
   height: auto;
   max-height: 100%;
