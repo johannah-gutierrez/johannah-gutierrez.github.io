@@ -13,19 +13,8 @@ To deploy your Angular app using Github Pages, here's what you should do.
 
 ![image](https://user-images.githubusercontent.com/111161441/235947379-80bce4ca-436c-4a42-b8ce-ab54684005e6.png)
 
-## 2. Install the "angular-cli-ghpages" Package
 
-   1. Open your Angular project directory in Visual Studio Code.
-   2. Open the integrated terminal.
-   3. Run the command using the integrated terminal:
-
-      ```sh
-      npm install -g angular-cli-ghpages
-      ```
-
-      >The "**npm**" command is used to interact with the Node Package Manager, "**install**" is a command used to install a package, "**-g**" is a flag that installs the package globally on the machine, and "**angular-cli-ghpages**" is the name of the package that will be installed.
-
-## 3. Build The Angular Project
+## 2. Build The Angular Project
 
 In this step, this Run the command using the integrated terminal:
 
@@ -35,7 +24,7 @@ ng build --output-path docs --base-href /repository-name/
 
 >The "**ng build**" command builds the Angular project for deployment, "**--output-path docs**" is a flag specifies the output directory to 'docs' instead of the default 'dist', "**--base-href /repository-name/**" is a command wherein the Angular CLI will build a production version of the Angular project and set the base URL to the specified GitHub Pages URL.
 
-## 4. Stage and Commit Changes
+## 3. Stage and Commit Changes
 
 To stage and commit changes, here is what you will have to do.
 
@@ -55,8 +44,15 @@ To stage and commit changes, here is what you will have to do.
 
 ![image](https://user-images.githubusercontent.com/111161441/236211478-1146cf0e-717f-44a5-b75d-1ff796efd145.png)
 
-## 5. Push what
+## 4. Push the Changes
 
+To push the changes, there are two ways to push the changes.
+
+- **Option 1**: Run the following code in terminal:
+  ```sh
+  ng push
+  ```
+- **Option 2**: 
 ## 5. Deploy the Project to GitHub Pages
 
   1. Run the command using the integrated terminal:
@@ -79,7 +75,7 @@ To stage and commit changes, here is what you will have to do.
 
   ![image](https://user-images.githubusercontent.com/111161441/236139415-4d1b6e1c-bd29-4689-9729-99b4b2d5214a.png)
 
-## 5. Visit the App Page
+## 6. Visit the App Page
 
 To visit the URL to your App gh-pages, access the URL **username.github.io**.
 
