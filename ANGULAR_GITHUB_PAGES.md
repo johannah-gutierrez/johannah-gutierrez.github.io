@@ -40,7 +40,7 @@ To stage and commit changes, here is what you will have to do.
 
 ![image](https://user-images.githubusercontent.com/111161441/236211369-671d5736-34f9-45e4-a2e8-fb2c8db6adae.png)
 
-  4. A window will pop up. Select what kind of change is being commited, the scope, an emoji wherein it serves as a representative of what kind of change it is, and a comment to shortly describe the change commited
+  4. A window will pop up. Select what kind of change is being commited, the scope, an emoji wherein it serves as a representative of what kind of change it is, and a comment to shortly describe the change commited.
 
 ![image](https://user-images.githubusercontent.com/111161441/236211478-1146cf0e-717f-44a5-b75d-1ff796efd145.png)
 
@@ -49,14 +49,25 @@ To stage and commit changes, here is what you will have to do.
 To push the changes, there are two ways to push the changes.
 
 - **Option 1**: Run the following code in terminal:
+
   ```sh
   ng push
   ```
-- **Option 2**: 
+
+- **Option 2**: Navigate to the Source Control tab found on the left menu bar of Visual Studio Code:
+  
+  ![image](https://user-images.githubusercontent.com/111161441/236364508-f441fdf7-1dc0-4fe8-a98c-4b9264f0e358.png)
+
+  Press the "Sync Changes" button to push the changes.
+
+  ![image](https://user-images.githubusercontent.com/111161441/236364362-b6a608f1-9e1b-4fde-ada9-c523ace07e1a.png)
+
+  >If the button is not visible, make sure to commit any changes.
+
 ## 5. Deploy the Project to GitHub Pages
 
   1. Run the command using the integrated terminal:
-   
+
   ```sh
   ngh --dir docs
   ```
