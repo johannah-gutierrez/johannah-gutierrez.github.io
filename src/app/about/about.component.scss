@@ -84,6 +84,8 @@ article {
 }
 
 .carousel-item {
+  object-fit: cover;
+
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity 0.6s ease-out;
